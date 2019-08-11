@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yaojialiu.dao.ArticlePicMapper">
+	<select id="select" resultType="map">
+		select * from cms_article_pic where id = #{id}
+	</select>
+	<select id="selects" resultType="map">
+		select * from cms_article_pic
+	</select>
+	<insert id="insert" >
+		insert into cms_article_pic(content,title) values(#{content},#{title})
+	</insert>
+</mapper>
